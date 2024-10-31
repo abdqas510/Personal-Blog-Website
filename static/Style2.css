@@ -1,0 +1,123 @@
+.Blog-Container > h1 {
+  display: flex;
+  width: 8vh;
+  height: 2vh;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5em; 
+  grid-area: 1/1/1/1;
+}
+.Blog-Container > #Buttons {
+  display: flex;
+  width: 10vh;
+  height: 10vh;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em; 
+  grid-area: 2/1/2/1;
+}
+
+.Blog-Container > #Cards {
+  display: flex;
+  width: 50vw;  
+  flex-direction: column;
+
+  margin-top: 1.25em;
+  margin-left: 0.5em;
+  padding: 0.6em;
+  gap: 0.5em;
+  justify-content: flex-start;
+  align-items: center; 
+  grid-area: 1/2/3/3;
+}
+
+.img-box img {
+  display: block;
+  width: 45vw;
+  height: 100px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background-color: aqua;
+  width: 90%;
+  height: 70%;
+  padding: 0.75em;
+  font-size: 0.72em;
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .Blog-Container > #Cards {
+    display: flex;
+    width: 60vw;   
+    flex-direction: row;    
+    margin-left: 50px;
+    padding: 1em;
+    gap: 1em;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .card {
+    width: 80%;
+    height: 56%;
+    font-size: 0.8em;
+  }
+
+  .img-box img {
+    display: block;
+    width: 25vw;
+    height: 110px;
+  }
+}
+
+@media (min-width: 901px) {
+  .Blog-Container > #Cards {
+    display: flex;
+    width: 60vw;    
+    flex-direction: row;
+
+    margin-top: 1.25em;
+    margin-left: 50px;
+    padding: 1em;
+    gap: 5%;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .card {
+    width: 70%;
+    height: 67%;
+    font-size: 1em;
+  }
+
+  .img-box img {
+    display: block;
+    width: 27vw;
+    height: 180px;
+  }
+}
+#Buttons {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5em;
+}
+#button-one {
+  background-color: #0f4c81;
+  color: aqua;
+}
+#button-one:hover {
+  background-color: #92a8d1;
+  color: black;
+}
+#button-two:hover {
+  background-color: #92a8d1;
+}
+.content {
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  padding: 0.25em;
+}
