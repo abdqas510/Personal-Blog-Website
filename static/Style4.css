@@ -1,0 +1,93 @@
+/* this styling is for the Blog post responsiveness */
+
+.Blog-Container {
+    display: grid;
+    width: 97%;
+    margin: auto;
+    grid-template-columns: 100px 450px;
+    grid-template-rows: 100px 500px;
+    background-color: #56c6a9;
+    border-radius: 10px; 
+    box-shadow: 10px 5px 5px gray;
+    grid-area: 2/1/3/3;
+  }
+/*at less than 600px this will be applied including 320px [mobile devices]*/
+.Blog-Container > #Cards {
+    display: flex;
+    width: 50vw;  
+    flex-direction: column;   
+    margin-top: 1.25em;
+    margin-left: 0.6em;
+    padding: 0.6em;
+    gap: 0.5em;
+    justify-content: flex-start;
+    align-items: center; 
+    grid-area: 1/2/3/3;
+  }
+  
+  .img-box img {
+    display: block;
+    width: 40vw;
+    height: 100px;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color: aqua;
+    width: 120%;
+    height: 70%;
+    padding: 0.75em;
+    font-size: 0.71em;
+  }
+  
+  @media (min-width: 600px) and (max-width: 900px) {
+    .Blog-Container > #Cards {
+      display: flex;
+      width: 50vw;   
+      flex-direction: row;    
+      margin-left: 70px;
+      padding: 1em;
+      gap: 0.5em;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .card {
+      width: 70%;
+      height: 66%;
+      font-size: 0.8em;
+    }
+  
+    .img-box img {
+      display: block;
+      width: 23vw;
+      height: 110px;
+    }
+  }
+  
+  @media (min-width: 901px) {
+    .Blog-Container > #Cards {
+      display: flex;
+      width: 60vw;    
+      flex-direction: row;
+  
+      margin-top: 1.25em;
+      margin-left: 70px;
+      padding: 1em;
+      gap: 5%;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .card {
+      width: 70%;
+      height: 75%;
+      font-size: 1em;
+    }
+  
+    .img-box img {
+      display: block;
+      width: 27vw;
+      height: 180px;
+    }
+  }

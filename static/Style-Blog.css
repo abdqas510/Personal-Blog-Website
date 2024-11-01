@@ -1,0 +1,51 @@
+body {
+  background-color: #98ddde;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+h1 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+figure{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  border: 1px solid;
+  border-radius: 50%;
+  width: 8vh;
+  height: 8vh;
+}
+.auth-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+}
+.info-container {
+  display: inline-block;
+  font-family: "andale mono", monospace;
+  font-weight: 800;
+}
+.Bio {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1em;
+}
+.Socials {
+  display: inline-block;
+  height: 20vh;
+  width: 20vh;
+}

@@ -1,44 +1,26 @@
-body {
-  background-color: #98ddde;
-}
-.container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  width: 90%;
-  margin: auto;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-h1 {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-}
-img {
-  border: 1px solid;
-  border-radius: 50%;
-  width: 6vh;
-  height: 6vh;
-}
-.auth-info {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 1em;
-}
-.info-container {
-  display: inline-block;
-  font-family: "andale mono", monospace;
-  font-weight: 800;
-}
-.Bio {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-top: 1em;
-}
-.Socials {
-  display: inline-block;
-  height: 20vh;
-  width: 20vh;
-}
+/* this styling is for the navbar responsiveness */
+
+
+/*at less than 600px this will be applied including 320px [mobile devices]*/
+.nav {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 0px;
+    gap: 4em;
+    color: aqua;
+    border-radius: 1rem;
+    background-color: aqua; 
+    grid-area: 1/1/3/3;
+  }
+@media (min-width: 600px) {
+    .nav {
+      gap: 10em;
+    }
+  }
+  @media (min-width: 900px) {
+    .nav {
+      gap: 16em;
+    }
+  }
